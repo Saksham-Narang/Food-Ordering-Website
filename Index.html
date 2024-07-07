@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Food Ordering Website</h1>
+            <div id="timer">00:00</div>
+        </header>
+        <main>
+            <section class="menu">
+                <h2>Menu</h2>
+                <ul id="menu-items">
+                    <!-- Menu items will be dynamically generated here -->
+                </ul>
+            </section>
+            <section class="order-summary">
+                <h2>Order Summary</h2>
+                <ul id="order-items">
+                    <!-- Order items will be dynamically generated here -->
+                </ul>
+                <p>Total Amount: $<span id="total-amount">0.00</span></p>
+            </section>
+            <section class="reviews">
+                <h2>Reviews</h2>
+                <form id="review-form">
+                    <input type="text" id="reviewer-name" placeholder="Your Name" required>
+                    <textarea id="review-text" placeholder="Your Review" required></textarea>
+                    <button type="submit">Submit Review</button>
+                </form>
+                <ul id="review-list">
+                    <!-- Reviews will be dynamically generated here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

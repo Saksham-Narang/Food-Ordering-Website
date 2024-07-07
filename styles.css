@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2a9d8f;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+#timer {
+    font-size: 1.5em;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #2a9d8f;
+    border-bottom: 2px solid #2a9d8f;
+    padding-bottom: 5px;
+}
+
+.menu, .order-summary, .reviews {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e76f51;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f4a261;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: #2a9d8f;
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-summary p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.order-summary p span {
+    color: #e76f51;
+}
+
+.review-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.review-list li strong {
+    color: #2a9d8f;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-form input, .review-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form button {
+    align-self: flex-start;
+}
+
+.menu-item, .order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 10px;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #timer {
+        margin-top: 10px;
+    }
+}
